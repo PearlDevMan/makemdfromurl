@@ -2,4 +2,6 @@
 Client/
 Can Dogs Eat Shrimp__files/
 result/
+__pycache__/
 Can Dogs Eat Shrimp_.html
+.env

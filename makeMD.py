@@ -1,8 +1,9 @@
 from bs4 import BeautifulSoup as bs
 
 def makeMD(soup, name, related):
-    filename = name + ".txt"
+    filename = 'result//' + name + ".txt"
     with open(filename, 'w') as f:
+        f.write("\n\nORIGINAL TEXT\n\n")
         for tag in soup.find_all(True):
             if(len(tag.get_text())):
                 if(tag.name == 'h1'):
