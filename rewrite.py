@@ -1,6 +1,6 @@
 import openai
 def getrewrite(text,filename):
-    openai.api_key = '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'
+    openai.api_key = 'sk-xxxxxxx'
     # Define the prompt and the original article
  
     path = "result//" + filename + "_rewrited" + ".txt"
