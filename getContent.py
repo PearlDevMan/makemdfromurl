@@ -28,4 +28,7 @@ def getRawContent(url):
         tag.extract()
     filename = new_soup.find('h1').string.replace('\n', '').strip()
     filename = re.sub('[^A-Za-z0-9 ]+', '', filename)
+    
+    #print(new_soup)
     return new_soup, filename, related
+#getRawContent("http://127.0.0.1:3000/Can Dogs Eat Shrimp_.html")
